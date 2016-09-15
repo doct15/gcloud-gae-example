@@ -4,4 +4,4 @@ bmcgehee/gcloud-gae-example:
     - pip install -r requirements.txt -t lib
   AfterBuildSuccess:
     - export PATH=$PATH:~/google-cloud-sdk/bin
-    - gcloud app deploy
+    - gcloud -q app deploy app.yaml --stop-previous-version
