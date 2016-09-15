@@ -9,10 +9,10 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+    return '<h1>Hello World! From Distelli to Google App Engine</h1>'
 
 
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""
-    return 'Sorry, nothing at this URL.', 404
+    return 'Sorry, nothing at this URL. Distelli error 404', 404
