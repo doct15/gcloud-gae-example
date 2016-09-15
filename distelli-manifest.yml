@@ -3,4 +3,5 @@ bmcgehee/gcloud-gae-example:
     - echo "Building"
     - pip install -r requirements.txt -t lib
   AfterBuildSuccess:
+    - export PATH=$PATH:~/google-cloud-sdk/bin
     - gcloud app deploy
