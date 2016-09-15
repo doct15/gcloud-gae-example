@@ -1,0 +1,6 @@
+bmcgehee/gcloud-gae-example:
+  Build:
+    - echo "Building"
+    - pip install -r requirements.txt -t lib
+  AfterBuildSuccess:
+    - gcloud app deploy
